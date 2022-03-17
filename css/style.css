@@ -168,7 +168,9 @@ a{
 	position: sticky;
 	top: 0;
 	width: 100vw;
-	background-color:rgba(0, 170, 166, 0.7);
+background: rgb(9,105,121);
+background: linear-gradient(270deg, rgba(9,105,121,0.7539390756302521) 48%, rgba(0,212,255,1) 100%);
+	color: white;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
@@ -200,7 +202,25 @@ a{
 }
 
 
-/* ----------- main - imagen principal ----------- */
+/* ----------- main - animación ----------- */
+@keyframes mainAnimation{
+	0%{background-image: url(../img/0-slide.png)}
+	25%{background-image: url(../img/1-slide.png)}
+	50%{background-image: url(../img/2-slide.png)}
+	75%{background-image: url(../img/3-slide.jpg)}
+	100%{background-image: url(../img/4-slide.png)}
+}
+
+.slider_slide{
+	width: 100vw;
+	height: 50vh;
+	animation-name:mainAnimation;
+	animation-duration: 25s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	background-size: cover;
+}
+
 .main__img{
 	width: 100vw;
 	height: auto;
@@ -230,7 +250,8 @@ a{
 /* ---------- index.html - sección principal - categorías ----------- */
 .section__title{
 	text-align: center;
-	background-color: rgba(0, 170, 166, 1);
+	background: rgb(2,0,36);
+	background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,105,121,1) 35%, rgba(0,212,255,1) 100%);
 	color: white;
 	width: 100vw;
 	height: auto;
@@ -263,7 +284,8 @@ a{
 /* -----HTML: categorias / contacto /sale / crear cuenta----------- */
 .main__titulo{
 	text-align: center;
-	background-color: rgba(97, 97, 97, 0.8);
+	background: rgb(2,0,36);
+	background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,105,121,1) 35%, rgba(0,212,255,1) 100%);
 	color: white;
 	width: 100vw;
 	height: auto;
