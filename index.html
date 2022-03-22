@@ -7,8 +7,10 @@
 	<meta name="description" content="En BC Homedeco diseñamos muebles y artículos de vanguardia con un estilo contemporáneo para la decoración de tu hogar. Comprá online en cuotas y recibilo en tu casa. Envíos a todo el país. ¡Entrá y conocenos ahora!">
 	<meta name="keywords" content="decoración, hogar, muebles, sillones, diseños exclusivos, homedeco, ofertas">
 	<title>BC Homedeco - Decoración del hogar</title>
+	<!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Stylesheet CSS -->
 	<link rel="stylesheet" type="text/css" href="css/style.css">
-
 	<!-- wow js -->
 	<link rel="stylesheet" href="css/animate.css">
 	<script src="js/wow.min.js"></script>
@@ -35,30 +37,79 @@
 		<!--end div encabezado-->
 	</header>	
 		
-	<!--inicio botonera-->			
-	<nav id="nav" class="botonera font-Xs">
-		<a href="index.html">
-			<img src="img/logo.png" alt="logo de BC Homedeco"> 
-		</a>
-		<ul>
-			<li><a href="index.html">INICIO</a></li>
-			<li><a href="pages/categorias.html">CATEGORÍAS</a></li>
-			<li><a href="pages/sale.html">SALE</a></li>
-			<li><a href="pages/contacto.html">CONTACTO</a></li>
-		</ul>
+	<!--inicio botonera-->	
+	<nav id="nav" class="navbar navbar-expand-md navbar-dark botonera">
+	  <div class="container-fluid py-2">
+	    <a class="navbar-brand" href="index.html"><img src="img/logo.svg" alt="logo de BC Homedeco"></a>
+	    <button class="navbar-toggler px-4 border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+	      <span class="navbar-toggler-icon"></span>
+	    </button>
+	    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+			<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+				<li class="nav-item">
+					<a class="nav-link" aria-current="page" href="index.html">INICIO</a>
+				</li>
+				<li class="nav-item dropdown">
+	        		<a class="nav-link dropdown-toggle" href="pages/categorias.html" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">CATEGORÍAS</a>
+
+					<ul class="dropdown-menu hamburger-style" aria-labelledby="navbarDropdown">
+						<li><a class="dropdown-item" href="pages/sillones.html">SILLONES</a></li>
+						<li><a class="dropdown-item" href="pages/dormitorio.html">DORMITORIO</a></li>
+						<li><a class="dropdown-item" href="pages/mesas-y-sillas.html">MESAS Y SILLAS</a></li>
+						<li><a class="dropdown-item" href="pages/baño.html">BAÑO</a></li>
+						<li><a class="dropdown-item" href="pages/deco-hogar.html">DECO HOGAR</a></li>
+						<li><a class="dropdown-item" href="pages/iluminacion.html">ILUMINACIÓN</a></li>
+					</ul>
+				</li>      
+				<li class="nav-item">
+					<a class="nav-link" href="pages/sale.html">SALE</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="pages/contacto.html">CONTACTO</a>
+				</li>
+			</ul>
+	    </div>
+	  </div>
 	</nav>
 	<!--end botonera-->
 
 	<main id="main">
-		<!--inicio imagen principal-->
-		<div class="slider_slide">
-<!-- 		<img src="img/0-slide.png" class="main__img">
-			<img src="img/1-slide.png" class="main__img">
-			<img src="img/2-slide.png" class="main__img">
-			<img src="img/3-slide.jpg" class="main__img">
-			<img src="img/4-slide.png" class="main__img"> -->
+		<!--inicio carousel-->
+		<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+			<div class="carousel-indicators">
+			    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+			    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+			    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+			    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>			
+			    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+			</div>
+			<div class="carousel-inner">
+			    <div class="carousel-item active">
+			    	<img src="img/0-slide.png" class="d-block w-100 main__img" alt="...">
+			    </div>
+			    <div class="carousel-item">
+			    	<img src="img/1-slide.png" class="d-block w-100 main__img" alt="...">
+			    </div>
+			    <div class="carousel-item">
+			    	<img src="img/2-slide.png" class="d-block w-100 main__img" alt="...">
+			    </div>
+			    <div class="carousel-item">
+			    	<img src="img/3-slide.jpg" class="d-block w-100 main__img" alt="...">
+			    </div>
+			    <div class="carousel-item">
+			    	<img src="img/4-slide.png" class="d-block w-100 main__img" alt="...">
+			    </div>			
+			</div>
+			<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+		    	<span class="visually-hidden">Previous</span>
+			</button>
+			<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+		    	<span class="carousel-control-next-icon" aria-hidden="true"></span>
+		   		<span class="visually-hidden">Next</span>
+			</button>
 		</div>
-		<!--fin imagen principal-->	
+		<!--end corousel-->
 
 		<!--bloque de contenido (envio-pago-seguridad-contacto)-->
 		<div class="main__pago-envio">
@@ -101,26 +152,31 @@
 				
 				<figure>
 					<figcaption class="font-M">DORMITORIO</figcaption>
+					<a href="pages/dormitorio.html">
 					<img src="img/dormitorio.jpg" alt="DORMITORIO" class="section__img--size">	
 				</figure>
 
 				<figure>
 					<figcaption class="font-M">MESAS Y SILLAS</figcaption>
+					<a href="pages/mesas-y-sillas.html">
 					<img src="img/mesas-y-sillas.jpg" alt="MESAS Y SILLAS" class="section__img--size">	
 				</figure>
 
 				<figure>
 					<figcaption class="font-M">BAÑO</figcaption>
+					<a href="pages/baño.html">
 					<img src="img/baño.jpg" alt="BAÑO" class="section__img--size">
 				</figure>
 
 				<figure>
 					<figcaption class="font-M">DECO HOGAR</figcaption>
+					<a href="pages/deco-hogar.html">
 					<img src="img/deco-hogar.jpg" alt="DECO HOGAR" class="section__img--size">		
 				</figure>
 
 				<figure>
 					<figcaption class="font-M">ILUMINACIÓN</figcaption>
+					<a href="pages/iluminacion.html">
 					<img src="img/iluminacion.jpg" alt="ILUMINACIÓN" class="section__img--size">		
 				</figure>
 			</div>	
@@ -164,6 +220,9 @@
 		<h4 class="font-S footer__rights text-left">Copyright© BC Homedeco-2022. Todos los derechos reservados.🔒Todas tus compras están protegidas.</h4>
 	</footer>
 	<!--end footer-->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
 </body>
 </html>

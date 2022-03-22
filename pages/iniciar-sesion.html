@@ -6,8 +6,17 @@
 	<meta name="author" content="Soledad Barcelona">
 	<meta name="description" content="En BC Homedeco diseñamos muebles y artículos de vanguardia con un estilo contemporáneo para la decoración de tu hogar. Comprá online en cuotas y recibilo en tu casa. Envíos a todo el país. ¡Entrá y conocenos ahora!">
 	<meta name="keywords" content="decoración, hogar, muebles, sillones, diseños exclusivos, homedeco, ofertas">
-	<title>BC Homedeco - Iniciar sesión</title>
+	<title>BC Homedeco - INICIAR SESIÓN</title>
+	<!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Stylesheet CSS -->
 	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<!-- wow js -->
+	<link rel="stylesheet" href="../css/animate.css">
+	<script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
 </head>
 
 <body class="contenedor">
@@ -28,26 +37,50 @@
 		<!--end div encabezado-->
 	</header>	
 		
-	<!--inicio botonera-->			
-	<nav id="nav" class="botonera font-Xs">
-		<a href="../index.html">
-			<img src="../img/logo.png" alt="logo de BC Homedeco"> 
-		</a>
-		<ul>
-			<li><a href="../index.html">INICIO</a></li>
-			<li><a href="categorias.html">CATEGORÍAS</a></li>
-			<li><a href="sale.html">SALE</a></li>
-			<li><a href="contacto.html">CONTACTO</a></li>
-		</ul>
+	<!--inicio botonera-->	
+	<nav id="nav" class="navbar navbar-expand-md navbar-dark botonera">
+	  <div class="container-fluid py-2">
+	    <a class="navbar-brand" href="../index.html"><img src="../img/logo.svg" alt="logo de BC Homedeco"></a>
+	    <button class="navbar-toggler px-4 border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+	      <span class="navbar-toggler-icon"></span>
+	    </button>
+		<div class="collapse navbar-collapse" id="navbarNavDropdown">
+			<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+				<li class="nav-item">
+					<a class="nav-link" aria-current="page" href="../index.html">INICIO</a>
+				</li>
+				<li class="nav-item dropdown">
+	        		<a class="nav-link dropdown-toggle" href="categorias.html" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">CATEGORÍAS</a>
+	        		
+					<ul class="dropdown-menu hamburger-style" aria-labelledby="navbarDropdown">
+						<li><a class="dropdown-item" href="sillones.html">SILLONES</a></li>
+						<li><a class="dropdown-item" href="dormitorio.html">DORMITORIO</a></li>
+						<li><a class="dropdown-item" href="mesas-y-sillas.html">MESAS Y SILLAS</a></li>
+						<li><a class="dropdown-item" href="baño.html">BAÑO</a></li>
+						<li><a class="dropdown-item" href="deco-hogar.html">DECO HOGAR</a></li>
+						<li><a class="dropdown-item" href="iluminacion.html">ILUMINACIÓN</a></li>
+					</ul>
+				</li>      
+				<li class="nav-item">
+					<a class="nav-link" href="sale.html">SALE</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="contacto.html">CONTACTO</a>
+				</li>
+			</ul>
+	    </div>
+	  </div>
 	</nav>
 	<!--end botonera-->
 
+
+	<!--inicia sección "iniciar sesión"-->
 	<main id="main">
 		<div class="main__titulo1">
 			<h1 class="font-L">INICIAR SESIÓN</h1>
 			<h2 class="font-M">Comprá más rápido y llevá el control de tus pedidos, ¡en un solo lugar!</h2>
 		</div>
-		<!--inicia el formulario "iniciar sesión"-->
+
         <div class="diseño__form">	
 			<form action="" class="">
 				<div>
@@ -62,7 +95,7 @@
 			</form>
 		</div>
 	</main>
-
+	<!--end sección "iniciar sesión"-->
 		
 	<!--inicio footer-->	
 	<footer id="footer" class="footer">
@@ -100,6 +133,9 @@
 		<h4 class="font-S footer__rights text-left">Copyright© BC Homedeco-2022. Todos los derechos reservados.🔒Todas tus compras están protegidas.</h4>
 	</footer>
 	<!--end footer-->
-	
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+		
 </body>
 </html>
