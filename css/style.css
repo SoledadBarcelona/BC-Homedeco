@@ -53,7 +53,7 @@ a{
 	display: grid;
 	grid-template-columns: 1fr;
 	grid-template-rows: auto;
-	grid-template-areas: "header" "nav" "main" "aside" "footer";
+	grid-template-areas: "header" "nav" "main" "footer";
 }
 
 /*areas del layout*/
@@ -67,10 +67,6 @@ a{
 
 #main{
 	grid-area: main;
-}
-
-#aside{
-	grid-area: aside;
 }
 
 #footer{
@@ -385,7 +381,7 @@ a{
 .footer__contacto{
 	display: flex;
 	flex-flow: row wrap;
-	justify-content: space-around;
+	justify-content: space-evenly;
 	padding-top: 1rem;
 	padding-bottom: 1rem;	
 }
@@ -395,11 +391,18 @@ a{
 	margin-top: 2rem;
 }
 
-.footer img{
-	width: 4rem;
-	height: auto;
-	padding-top: 1rem;
-	padding-right: 0.3rem;
+.footer__redes{
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: center;
+}
+
+.redes{
+	padding: 1rem 2rem;
+	color: white;
+	font-size: 5rem;
+	background-color: transparent;
+	border: none;
 }
 
 .footer__contactanos{
