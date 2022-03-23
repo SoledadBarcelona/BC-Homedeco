@@ -17,6 +17,7 @@
     <script>
         new WOW().init();
     </script>
+	<script src="https://kit.fontawesome.com/2e903b5ce6.js" crossorigin="anonymous"></script>
 </head>
 
 <body class="contenedor">
@@ -29,7 +30,7 @@
 			</ul>	
 			<div class="buscar">
 				<input type="text" placeholder="BUSCAR" required>
-				<div class="btn">
+				<div class="btn1">
 					<img src="../img/glass.png" class="icon">
 				</div>		
 			</div>		
@@ -39,37 +40,37 @@
 		
 	<!--inicio botonera-->	
 	<nav id="nav" class="navbar navbar-expand-md navbar-dark botonera">
-	  <div class="container-fluid py-2">
-	    <a class="navbar-brand" href="../index.html"><img src="../img/logo.svg" alt="logo de BC Homedeco"></a>
-	    <button class="navbar-toggler px-4 border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-	      <span class="navbar-toggler-icon"></span>
-	    </button>
-		<div class="collapse navbar-collapse" id="navbarNavDropdown">
-			<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-				<li class="nav-item">
-					<a class="nav-link" aria-current="page" href="../index.html">INICIO</a>
-				</li>
-				<li class="nav-item dropdown">
-	        		<a class="nav-link dropdown-toggle" href="categorias.html" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">CATEGORÍAS</a>
-	        		
-					<ul class="dropdown-menu hamburger-style" aria-labelledby="navbarDropdown">
-						<li><a class="dropdown-item" href="sillones.html">SILLONES</a></li>
-						<li><a class="dropdown-item" href="dormitorio.html">DORMITORIO</a></li>
-						<li><a class="dropdown-item" href="mesas-y-sillas.html">MESAS Y SILLAS</a></li>
-						<li><a class="dropdown-item" href="baño.html">BAÑO</a></li>
-						<li><a class="dropdown-item" href="deco-hogar.html">DECO HOGAR</a></li>
-						<li><a class="dropdown-item" href="iluminacion.html">ILUMINACIÓN</a></li>
-					</ul>
-				</li>      
-				<li class="nav-item">
-					<a class="nav-link" href="sale.html">SALE</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="contacto.html">CONTACTO</a>
-				</li>
-			</ul>
-	    </div>
-	  </div>
+		<div class="container-fluid py-2">
+	    	<a class="navbar-brand" href="../index.html"><img src="../img/logo.svg" alt="logo de BC Homedeco"></a>
+			<button class="navbar-toggler px-4 border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNavDropdown">
+				<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+					<li class="nav-item">
+						<a class="nav-link" aria-current="page" href="../index.html">INICIO</a>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="categorias.html" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">CATEGORÍAS</a>
+						
+						<ul class="dropdown-menu hamburger-style" aria-labelledby="navbarDropdown">
+							<li><a class="dropdown-item" href="sillones.html">SILLONES</a></li>
+							<li><a class="dropdown-item" href="dormitorio.html">DORMITORIO</a></li>
+							<li><a class="dropdown-item" href="mesas-y-sillas.html">MESAS Y SILLAS</a></li>
+							<li><a class="dropdown-item" href="baño.html">BAÑO</a></li>
+							<li><a class="dropdown-item" href="deco-hogar.html">DECO HOGAR</a></li>
+							<li><a class="dropdown-item" href="iluminacion.html">ILUMINACIÓN</a></li>
+						</ul>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="sale.html">SALE</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="contacto.html">CONTACTO</a>
+					</li>
+				</ul>
+			</div>
+		</div>
 	</nav>
 	<!--end botonera-->
 
@@ -81,6 +82,7 @@
 			<h2 class="font-M">Comprá más rápido y llevá el control de tus pedidos, ¡en un solo lugar!</h2>
 		</div>
 
+		<!--inicia el formulario "iniciar sesión"-->
         <div class="diseño__form">	
 			<form action="" class="">
 				<div>
@@ -91,11 +93,24 @@
 					<label for="password" class="font-S label">Contraseña</label> 
 					<input type="password" name="password" id="password" class="style">
 				</div>
-				<input type="submit" value="INICIAR SESIÓN" class="font-S redondeado">
+				<div><input type="submit" value="INICIAR SESIÓN" class="font-S redondeado"></div>
+				
+				<div class="mt-5" style-button>
+					<button type="button" class="btn btn-danger">
+						<i class="fa-brands fa-google"></i>
+						<span class="font-M">Google</span>
+					</button>
+
+					<button type="button" class="btn btn-primary">
+						<i class="fa-brands fa-facebook-f"></i>
+						<span class="font-M">Facebook</span>
+					</button>
+				</div>
 			</form>
 		</div>
 	</main>
 	<!--end sección "iniciar sesión"-->
+
 		
 	<!--inicio footer-->	
 	<footer id="footer" class="footer">
