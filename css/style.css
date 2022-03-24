@@ -262,7 +262,7 @@ a{
 	padding-bottom: 1rem;
 }
 
-/* -----HTML: categorias / contacto /sale / crear cuenta----------- */
+/* ----- HTML: categorias / contacto /sale / crear cuenta----------- */
 .main__titulo{
 	text-align: center;
 	background: rgb(2,0,36);
@@ -287,6 +287,7 @@ a{
 	padding-bottom: 1rem;
 }
 
+/* ----------- contacto ----------- */
 .main-contacto{
 	display: flex;
 	flex-direction: column;
@@ -314,6 +315,22 @@ a{
 	background-color: rgba(9, 105, 121, 1);
 	color: white;
 	margin-right: 2rem;
+}
+
+/* ----------- mesas y sillas ----------- */
+.span-design1{
+	padding: 0.2rem;
+	background-color: rgba(12, 171, 168, 1);
+	color: white;
+	margin-right: 0.8rem;
+}
+
+.section__img--size1{
+	width: 24rem;
+	height: 34rem;
+	margin: 0.4rem;
+	padding-top: 2rem;
+	padding-bottom: 1rem;
 }
 
 .diseño__form{
@@ -512,6 +529,12 @@ a{
 	.img--size{
 		width: 40rem; 
 		height: 40rem;
+	}
+
+/* ----------- mesas y sillas ----------- */
+	.section__img--size1{
+		width: 37rem;
+		height: 50rem;
 	}
 
 	.style{
