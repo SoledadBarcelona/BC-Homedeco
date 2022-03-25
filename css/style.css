@@ -193,6 +193,7 @@ a{
 .botonera ul li a:hover{
 	color: rgba(9, 105, 121, 1);
 	font-weight: 600;
+	transform: scale(1.15);
 }
 
 .hamburger-style{
@@ -209,11 +210,11 @@ a{
 
 /* ----------- main - envio-pago-seguridad-contacto ----------- */
 .main__pago-envio{
-	background-color: silver;
-	margin-top: -0.2rem;
-	padding-bottom: 2rem;
+	background-color: rgba(1, 89, 88, .5);
 	width: 100vw;
-	height: auto;	
+	height: auto;
+	padding-top: 3rem;
+	padding-bottom: 3rem;	
 	display: flex;
 	flex-flow: column wrap;
 	justify-content: space-around;
@@ -261,6 +262,13 @@ a{
 	padding-top: 2rem;
 	padding-bottom: 1rem;
 }
+
+/* ----------- animación img index ----------- */
+.scale-img :hover{
+	transform: scale(1.05);
+	transition: 0.5s;
+}
+
 
 /* ----- HTML: categorias / contacto /sale / crear cuenta----------- */
 .main__titulo{
@@ -501,7 +509,7 @@ a{
 		height: auto;
 		display: flex;
 		flex-flow: row wrap;
-		padding: 2rem 15rem;
+		padding: 4rem;
 		font-weight: 1.5rem;
 	}
 	.img_pagos{
@@ -560,16 +568,9 @@ a{
 		grid-template-rows: auto;
 	}
 /* ----------- main - envio-pago-seguridad-contacto ----------- */
-	.main__pago-envio{
-		width: 100vw;
-		height: auto;
-		display: flex;
-		flex-flow: row wrap;
-		padding: 2rem 1rem;
-		font-weight: 1.5rem;
-	}
 	.img_pagos{
 		padding-left: 2rem;
+		padding-right: 2rem;
 		width: 7rem;
 	}
 
