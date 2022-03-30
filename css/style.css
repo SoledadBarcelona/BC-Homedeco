@@ -524,7 +524,7 @@ a{
 	}
 
 	.cat-style1{
-	line-height: 2.5rem;
+		line-height: 2.5rem;
 	}
 
 	.main-contacto{
@@ -575,8 +575,8 @@ a{
 	}
 
 	.img--size{
-	width: 50rem; 
-	height: 50rem;
+		width: 50rem; 
+		height: 50rem;
 	}
 
 	.cat-style{

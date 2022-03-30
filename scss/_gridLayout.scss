@@ -1,0 +1,25 @@
+// GRID //
+.contenedor{
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: auto;
+	grid-template-areas: "header" "nav" "main" "footer";
+}
+
+// areas del layout //
+#header{
+	grid-area: header;
+}
+
+#nav{
+	grid-area: nav;
+}
+
+#main{
+	grid-area: main;
+}
+
+#footer{
+	grid-area: footer;
+}
+
