@@ -1,6 +1,6 @@
 #nav{
 	.botonera{
-		background-color: rgba(9, 105, 121, 1);
+		background-color: $bgNav;
 		width: 100vw;
 		position: sticky;
 		top: 0;
@@ -20,9 +20,9 @@
 				li{
 					list-style: none;
 					a{
-						color: white ;
+						color: $colorW;
 						:hover{
-							color: rgba(9, 105, 121, 1);
+							color: $colorTurq;
 							font-weight: 600;
 							transform: scale(1.15);
 						}
@@ -31,7 +31,7 @@
 			}	
 	}
 	.hamburger-style{
-		background-color: rgba(9, 105, 121, 1);	
+		background-color: $bgNav;	
 		border: none;
 		text-align: left;	
 	}
