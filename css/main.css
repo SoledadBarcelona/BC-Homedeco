@@ -98,9 +98,9 @@ a {
     border: 1px solid #C0C0C0;
     border-radius: 3rem;
     transition: all 0.6s ease; }
-    #header .buscar input:hover {
+    #header .buscar input :hover {
       width: 24rem; }
-    #header .buscar input:focus {
+    #header .buscar input :focus {
       width: 24rem; }
 
 #header .btn1 {
@@ -111,7 +111,7 @@ a {
   height: 5.5rem;
   line-height: 5.5rem;
   text-align: center;
-  background: #FFFFFF;
+  background: #FFF;
   color: #FFFFFF;
   font-size: 1.8rem;
   border-radius: 50%;
@@ -122,36 +122,35 @@ a {
   width: 3rem;
   height: 3rem; }
 
-#nav .botonera {
+#nav {
   background-color: #096979;
   width: 100vw;
   position: sticky;
   top: 0;
   z-index: 1000; }
-  #nav .botonera img {
+  #nav img {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
     width: 10rem; }
-  #nav .botonera ul {
+  #nav ul {
     justify-content: space-evenly;
     align-items: center;
     list-style: none;
     font-weight: 800; }
-    #nav .botonera ul li {
+    #nav ul li {
       list-style: none; }
-      #nav .botonera ul li a {
-        color: white; }
-        #nav .botonera ul li a :hover {
+      #nav ul li a {
+        color: #FFFFFF; }
+        #nav ul li a :hover {
           color: #096979;
           font-weight: 600;
           transform: scale(1.15); }
-
-#nav .hamburger-style {
-  background-color: #096979;
-  border: none;
-  text-align: left; }
+  #nav .hamburger-style {
+    background-color: #096979;
+    border: none;
+    text-align: left; }
 
 #main .main__img {
   width: 100vw;
@@ -178,7 +177,7 @@ a {
   text-align: center;
   background: #020024;
   background: linear-gradient(90deg, #020024 0%, #096979 35%, #00d4ff 100%);
-  color: white;
+  color: colorW;
   width: 100vw;
   height: auto;
   padding: 1.6rem 2rem; }
@@ -274,7 +273,7 @@ a {
   .contenedor {
     grid-template-columns: 1fr;
     grid-template-rows: auto; }
-  .encabezado {
+  #header .encabezado {
     display: flex;
     flex-direction: row-reverse;
     padding: 1.5rem 2rem; }

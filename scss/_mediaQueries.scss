@@ -5,11 +5,13 @@
 		grid-template-rows: auto;
 	}
 // header encabezado //
+#header{
 	.encabezado{
 		display: flex;
 		flex-direction: row-reverse;
 		padding: 1.5rem 2rem;		
 	}
+}
 
 // nav //
 	.botonera{
