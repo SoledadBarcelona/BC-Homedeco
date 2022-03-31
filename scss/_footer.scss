@@ -1,75 +1,67 @@
 
 // pie de página //
-.footer{
+#footer{
 	background-color: rgba(32, 33, 36, 1);
 	color: white;
-}
-
-.footer__contacto{
-	display: flex;
-	flex-flow: row wrap;
-	justify-content: space-evenly;
-	padding-top: 1rem;
-	padding-bottom: 1rem;	
-}
-
-.footer__seguinos{
-	text-align: center;
-	margin-top: 2rem;
-}
-
-.footer__redes{
-	display: flex;
-	flex-flow: row nowrap;
-	justify-content: center;
-}
-
-.redes{
-	padding: 1rem 2rem;
-	color: white;
-	font-size: 5rem;
-	background-color: transparent;
-	border: none;
-}
-
-.footer__contactanos{
-	text-align: center;
-	margin-top: 2rem;
-}
-
-.footer__mail{
-	margin-top: 2rem;
-}
-
-.footer__medios-de-pago{
-	width: 100vw;
-	display: flex;
-	flex-flow: row wrap;
-	justify-content: space-evenly;
-	padding-top: 2rem;
-	padding-bottom: 1rem;
-	padding-left: 1rem;
-	padding-right: 2rem;
-	img{
-	padding: 1rem 1rem;
-	width: 6rem;
-	height: auto;
+	.footer__contacto{
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-evenly;
+		padding-top: 1rem;
+		padding-bottom: 1rem;	
 	}
-}
-
-.h4_footer{
-	margin-top: 2rem;
-}
-
-.footer__rights{
-	width: 100vw;	
-	font-family: 'Montserrat', sans-serif;
-	font-weight: 300;
-	font-size: 1.3rem;
-	text-align: left;
-	display: flex;
-	flex-flow: row wrap;
-	justify-content: space-evenly;
-	align-items: center;
-	padding: 2rem 1rem;
+	.footer__seguinos{
+		text-align: center;
+		margin-top: 2rem;
+	}
+	.footer__redes{
+		display: flex;
+		flex-flow: row nowrap;
+		justify-content: center;
+	}
+	.redes{
+		padding: 1rem 2rem;
+		color: white;
+		font-size: 5rem;
+		background-color: transparent;
+		border: none;
+	}
+	.footer__contactanos{
+		text-align: center;
+		margin-top: 2rem;
+	}
+	.footer__mail{
+		margin-top: 2rem;
+	}
+	.footer__medios-de-pago{
+		width: 100vw;
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-evenly;
+		padding-top: 2rem;
+		padding-bottom: 1rem;
+		padding-left: 1rem;
+		padding-right: 2rem;
+		border-bottom: 1px solid $colorG;
+		img{
+		padding: 1rem 1rem;
+		width: 6rem;
+		height: auto;
+		}
+	}
+	.h4_footer{
+		margin-top: 2rem;
+	}
+	.footer__rights{
+		width: 100vw;	
+		font-family: 'Montserrat', sans-serif;
+		font-weight: 300;
+		font-size: 1.3rem;
+		text-align: left;
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-evenly;
+		align-items: center;
+		padding: 1.2rem 1rem;
+	}
 }

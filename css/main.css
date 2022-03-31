@@ -26,7 +26,7 @@ a {
   font-weight: 400; }
 
 .font-S {
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   font-weight: 400; }
 
 .font-Xs {
@@ -156,7 +156,7 @@ a {
   width: 100vw;
   height: auto; }
 
-.main__pago-envio {
+#main .main__pago-envio {
   background-color: rgba(1, 89, 88, 0.5);
   width: 100vw;
   height: auto;
@@ -168,7 +168,7 @@ a {
   align-items: center;
   text-align: center; }
 
-.img_pagos {
+#main .img_pagos {
   width: 5rem;
   margin-left: 0.5rem;
   margin-right: 0.5rem; }
@@ -199,75 +199,68 @@ a {
   width: 30rem;
   height: 30rem;
   margin: 0.4rem;
-  padding-top: 2rem;
+  padding-top: 1rem;
   padding-bottom: 1rem; }
 
 .scale-img :hover {
   transform: scale(1.05);
-  transition: 0.5s; }
+  transition: 0.5s ease;
+  border-radius: 2.8rem; }
 
-.footer {
+#footer {
   background-color: #202124;
   color: white; }
-
-.footer__contacto {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-evenly;
-  padding-top: 1rem;
-  padding-bottom: 1rem; }
-
-.footer__seguinos {
-  text-align: center;
-  margin-top: 2rem; }
-
-.footer__redes {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: center; }
-
-.redes {
-  padding: 1rem 2rem;
-  color: white;
-  font-size: 5rem;
-  background-color: transparent;
-  border: none; }
-
-.footer__contactanos {
-  text-align: center;
-  margin-top: 2rem; }
-
-.footer__mail {
-  margin-top: 2rem; }
-
-.footer__medios-de-pago {
-  width: 100vw;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-evenly;
-  padding-top: 2rem;
-  padding-bottom: 1rem;
-  padding-left: 1rem;
-  padding-right: 2rem; }
-  .footer__medios-de-pago img {
-    padding: 1rem 1rem;
-    width: 6rem;
-    height: auto; }
-
-.h4_footer {
-  margin-top: 2rem; }
-
-.footer__rights {
-  width: 100vw;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 300;
-  font-size: 1.3rem;
-  text-align: left;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-evenly;
-  align-items: center;
-  padding: 2rem 1rem; }
+  #footer .footer__contacto {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    padding-top: 1rem;
+    padding-bottom: 1rem; }
+  #footer .footer__seguinos {
+    text-align: center;
+    margin-top: 2rem; }
+  #footer .footer__redes {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center; }
+  #footer .redes {
+    padding: 1rem 2rem;
+    color: white;
+    font-size: 5rem;
+    background-color: transparent;
+    border: none; }
+  #footer .footer__contactanos {
+    text-align: center;
+    margin-top: 2rem; }
+  #footer .footer__mail {
+    margin-top: 2rem; }
+  #footer .footer__medios-de-pago {
+    width: 100vw;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+    padding-right: 2rem;
+    border-bottom: 1px solid #515B5B; }
+    #footer .footer__medios-de-pago img {
+      padding: 1rem 1rem;
+      width: 6rem;
+      height: auto; }
+  #footer .h4_footer {
+    margin-top: 2rem; }
+  #footer .footer__rights {
+    width: 100vw;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 1.3rem;
+    text-align: left;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1.2rem 1rem; }
 
 @media (min-width: 768px) {
   .contenedor {
@@ -277,27 +270,27 @@ a {
     display: flex;
     flex-direction: row-reverse;
     padding: 1.5rem 2rem; }
-  .botonera {
+  #nav {
     vertical-align: baseline;
     width: 100vw;
     height: 7rem;
     padding-left: 2rem;
     padding-right: 1rem; }
-    .botonera img {
+    #nav img {
       width: 12rem;
       padding-top: 0.4rem; }
-    .botonera ul li {
+    #nav ul li {
       padding-left: 5rem;
       padding-right: 2rem; }
-  .main__pago-envio {
+  #main .main__pago-envio {
     width: 100vw;
     height: auto;
     display: flex;
     flex-flow: row wrap;
     padding: 4rem;
     font-weight: 1.5rem; }
-  .img_pagos {
-    width: 5rem; }
+  #main .img_pagos {
+    width: 4rem; }
   .cat-style {
     justify-content: space-around;
     padding: 2rem 1rem;
@@ -320,17 +313,17 @@ a {
     width: 50rem; }
   .redondeado {
     width: 50rem; }
-  .footer__medios-de-pago img {
+  #footer .footer__medios-de-pago img {
     width: 8rem; } }
 
 @media (min-width: 1024px) {
   .contenedor {
     grid-template-columns: 1fr;
     grid-template-rows: auto; }
-  .img_pagos {
+  #main .img_pagos {
     padding-left: 2rem;
     padding-right: 2rem;
-    width: 7rem; }
+    width: 9rem; }
   .img--size {
     width: 50rem;
     height: 50rem; }

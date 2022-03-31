@@ -14,24 +14,24 @@
 }
 
 // nav //
-	.botonera{
-		vertical-align: baseline;
-		width: 100vw;
-		height: 7rem;
-		padding-left: 2rem;
-		padding-right: 1rem;
-		img{
-			width: 12rem;
-			padding-top: 0.4rem;
-		}
-		ul li{
-			padding-left: 5rem;
-			padding-right: 2rem;	
-		}
-	}	
-
+#nav{
+	vertical-align: baseline;
+	width: 100vw;
+	height: 7rem;
+	padding-left: 2rem;
+	padding-right: 1rem;
+	img{
+		width: 12rem;
+		padding-top: 0.4rem;
+	}
+	ul li{
+		padding-left: 5rem;
+		padding-right: 2rem;	
+	}
+}
 
 // main - envio-pago-seguridad-contacto //
+#main{
 	.main__pago-envio{
 		width: 100vw;
 		height: auto;
@@ -41,8 +41,10 @@
 		font-weight: 1.5rem;
 	}
 	.img_pagos{
-		width: 5rem;
+		width: 4rem;
 	}
+}
+
 
 // HTML: categorias / contacto /sale / crear cuenta //
 	.cat-style{
@@ -78,12 +80,13 @@
 	}
 
 // pie de página //
+#footer{
 	.footer__medios-de-pago img{
 		width: 8rem;
 	}
 }
 
-
+}
 // media queries //
 @media (min-width: 1024px){
 	.contenedor{
@@ -91,11 +94,13 @@
 		grid-template-rows: auto;
 	}
 // main - envio-pago-seguridad-contacto //
+#main{
 	.img_pagos{
 		padding-left: 2rem;
 		padding-right: 2rem;
-		width: 7rem;
+		width: 9rem;
 	}
+}
 
 	.img--size{
 	width: 50rem; 
