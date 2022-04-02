@@ -1,49 +1,48 @@
-// media queries //
+/* ----- media queries ----- */
 @media (min-width: 768px){
 	.contenedor{
 		grid-template-columns: 1fr;
 		grid-template-rows: auto;
 	}
 // header encabezado //
-#header{
-	.encabezado{
-		display: flex;
-		flex-direction: row-reverse;
-		padding: 1.5rem 2rem;		
+	#header{
+		.encabezado{
+			display: flex;
+			flex-direction: row-reverse;
+			padding: 1.5rem 2rem;		
+		}
 	}
-}
 
 // nav //
-#nav{
-	vertical-align: baseline;
-	width: 100vw;
-	height: 7rem;
-	padding-left: 2rem;
-	padding-right: 1rem;
-	img{
-		width: 12rem;
-		padding-top: 0.4rem;
+	#nav{
+		vertical-align: baseline;
+		width: 100vw;
+		height: 7rem;
+		padding-left: 2rem;
+		padding-right: 1rem;
+		img{
+			width: 16rem;
+		}
+		ul li{
+			padding-left: 5rem;
+			padding-right: 2rem;	
+		}
 	}
-	ul li{
-		padding-left: 5rem;
-		padding-right: 2rem;	
-	}
-}
 
 // main - envio-pago-seguridad-contacto //
-#main{
-	.main__pago-envio{
-		width: 100vw;
-		height: auto;
-		display: flex;
-		flex-flow: row wrap;
-		padding: 4rem;
-		font-weight: 1.5rem;
+	#main{
+		.main__pago-envio{
+			width: 100vw;
+			height: auto;
+			display: flex;
+			flex-flow: row wrap;
+			padding: 4rem;
+			font-weight: 1.5rem;
+		}
+		.img_pagos{
+			width: 4rem;
+		}
 	}
-	.img_pagos{
-		width: 4rem;
-	}
-}
 
 
 // HTML: categorias / contacto /sale / crear cuenta //
@@ -66,7 +65,7 @@
 		height: 40rem;
 	}
 
-// mesas y sillas //
+// categorías //
 	.section__img--size1{
 		width: 37rem;
 		height: 50rem;
@@ -80,40 +79,40 @@
 	}
 
 // pie de página //
-#footer{
-	.footer__medios-de-pago img{
-		width: 8rem;
+	#footer{
+		.footer__medios-de-pago img{
+			width: 8rem;
+		}
 	}
 }
 
-}
-// media queries //
+/* ----- media queries ----- */
 @media (min-width: 1024px){
 	.contenedor{
 		grid-template-columns: 1fr;
 		grid-template-rows: auto;
 	}
-// main - envio-pago-seguridad-contacto //
-#main{
-	.img_pagos{
-		padding-left: 2rem;
-		padding-right: 2rem;
-		width: 9rem;
-	}
-}
-
-	.img--size{
-	width: 50rem; 
-	height: 50rem;
+	// main - envio-pago-seguridad-contacto //
+	#main{
+		.img_pagos{
+			padding-left: 2rem;
+			padding-right: 2rem;
+			width: 9rem;
+		}
 	}
 
-	.cat-style{
-		justify-content: space-around;
-		padding: 2rem 1rem;
-		line-height: 4rem;
-	}
-	
-	.cat-style1{
-	line-height: 2.5rem;
-	}
+		.img--size{
+		width: 50rem; 
+		height: 50rem;
+		}
+
+		.cat-style{
+			justify-content: space-around;
+			padding: 2rem 1rem;
+			line-height: 4rem;
+		}
+		
+		.cat-style1{
+		line-height: 2.5rem;
+		}
 }

@@ -1,13 +1,14 @@
 // Background Color //
-$bgEncabezado: rgba(32, 33, 36, 1);
-$bgEncabezado-hover: rgba(9, 105, 121, 1);
-$bgBtn1: #FFF;
-$bgNav: rgba(9, 105, 121, 1);
+$bgWhite: #FFFFFF;
+$bgTurq: rgba(9, 105, 121, 1);
 $bgMain__pago-envio: rgba(1, 89, 88, .5);
-
+$bgGradient: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,105,121,1) 35%, rgba(0,212,255,1) 100%);
+$bgLight-turquoise: rgba(12, 171, 168, 1);
+$bgDark: rgba(32, 33, 36, 1);
 
 // Color //
 $colorW: #FFFFFF;
 $colorS: #C0C0C0;
 $colorG: #515B5B;
 $colorTurq: rgba(9, 105, 121, 1);
+$colorB: rgba(2, 0, 36, .8);

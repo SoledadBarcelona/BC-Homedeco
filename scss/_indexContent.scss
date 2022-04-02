@@ -1,4 +1,4 @@
-// main - carousel //
+/* ----- main - carousel ----- */
 #main{
 	.main__img{
 		width: 100vw;
@@ -6,7 +6,7 @@
 	}
 }
 
-// main - envio-pago-seguridad-contacto //
+/* ----- main - envio-pago-seguridad-contacto ----- */
 #main{
 	.main__pago-envio{
 		background-color: $bgMain__pago-envio;
@@ -27,11 +27,11 @@
 	}
 }
 
-// index.html - sección principal - categorías //
+/* ----- sección principal - categorías ----- */
 .section__title{
 	text-align: center;
 	background: rgb(2,0,36);
-	background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,105,121,1) 35%, rgba(0,212,255,1) 100%);
+	background: $bgGradient;
 	color: colorW;
 	width: 100vw;
 	height: auto;
@@ -61,7 +61,7 @@
 	padding-bottom: 1rem;
 }
 
-// animación img index //
+/* ----- animación img index ----- */
 .scale-img :hover{
 	transform: scale(1.05);
 	transition: 0.5s ease;

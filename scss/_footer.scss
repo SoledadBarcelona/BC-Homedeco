@@ -1,8 +1,7 @@
-
-// pie de página //
+/* ----- pie de página ----- */
 #footer{
-	background-color: rgba(32, 33, 36, 1);
-	color: white;
+	background-color: $bgDark;
+	color: $colorW;
 	.footer__contacto{
 		display: flex;
 		flex-flow: row wrap;
@@ -21,7 +20,7 @@
 	}
 	.redes{
 		padding: 1rem 2rem;
-		color: white;
+		color: $colorW;
 		font-size: 5rem;
 		background-color: transparent;
 		border: none;
