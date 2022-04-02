@@ -1,0 +1,32 @@
+/* ----- categorías ----- */
+.main__titulo{
+	text-align: center;
+	background: rgb(2,0,36);
+	background: $bgGradient;
+	color: $colorW;
+	width: 100vw;
+	height: auto;
+	margin-top: -0.5rem;
+	padding-top: 1.6rem;
+	padding-bottom: 1.6rem;
+}
+
+.span-design1{
+	padding: 0.2rem;
+	background-color: $bgLight-turquoise;
+	color: $colorW;
+	margin-right: 0.8rem;
+}
+
+.section__img--size1{
+	width: 24rem;
+	height: 34rem;
+	margin: 0.4rem;
+	padding-top: 2rem;
+	padding-bottom: 1rem;
+}
+
+.style-button{
+	display: flex;
+	flex-flow: column wrap;
+}
