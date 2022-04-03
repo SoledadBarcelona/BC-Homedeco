@@ -144,7 +144,7 @@ a {
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  width: 12rem;
+  width: 18rem;
   padding-left: 1.5rem; }
 
 .botonera ul {
@@ -409,10 +409,9 @@ a {
     vertical-align: baseline;
     width: 100vw;
     height: 7rem;
-    padding-left: 2rem;
     padding-right: 1rem; }
     #nav img {
-      width: 16rem; }
+      width: 24rem; }
     #nav ul li {
       padding-left: 5rem;
       padding-right: 2rem; }
