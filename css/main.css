@@ -169,7 +169,7 @@ a {
 /* ----- main - carousel ----- */
 #main .main__img {
   width: 100vw;
-  height: auto; }
+  height: 14rem; }
 
 /* ----- main - envio-pago-seguridad-contacto ----- */
 #main .main__pago-envio {
@@ -397,6 +397,14 @@ a {
     padding: 1.2rem 1rem; }
 
 /* ----- media queries ----- */
+@media (min-width: 450px) {
+  .contenedor {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto; }
+  #main .main__img {
+    width: 100vw;
+    height: auto; } }
+
 @media (min-width: 768px) {
   .contenedor {
     grid-template-columns: 1fr;
@@ -415,6 +423,9 @@ a {
     #nav ul li {
       padding-left: 5rem;
       padding-right: 2rem; }
+  #main .main__img {
+    width: 100vw;
+    height: auto; }
   #main .main__pago-envio {
     width: 100vw;
     height: auto;
@@ -458,12 +469,12 @@ a {
     padding-left: 2rem;
     padding-right: 2rem;
     width: 9rem; }
-  .img--size {
+  #main .img--size {
     width: 50rem;
     height: 50rem; }
-  .cat-style {
+  #main .cat-style {
     justify-content: space-around;
     padding: 2rem 1rem;
     line-height: 4rem; }
-  .cat-style1 {
+  #main .cat-style1 {
     line-height: 2.5rem; } }
