@@ -4,7 +4,7 @@
 		width: 100vw;
 		height: 6rem;
 		padding-right: 1rem;
-		background-color: $bgDark;
+		background-color: map-get($map:$paleta,$key:'cinco');
 		color: $colorW;
 		@include flex(row,space-between,center);
 		ul{
@@ -50,7 +50,7 @@
 		right: 0;
 		width: 5.5rem;
 		height: 5.5rem;
-		background: $bgWhite;
+		background-color: map-get($map:$paleta,$key:'uno');
 		color: $colorW;
 		@include texto (1.8rem, 5.5rem, center);		
 		border-radius: 50%;
@@ -74,7 +74,7 @@
 
 /* ----- navBar ----- */
 .botonera{
-	background-color: $bgTurq;
+	background-color: map-get($map:$paleta,$key:'tres');
 	width: 100vw;
 	position: sticky;
 	top: 0;
@@ -93,7 +93,7 @@
 	li a{
 		color: $colorW;
 		&:hover{
-			color: $bgTurq;
+			color: $colorTurq;
 			font-weight: 600;
 			transform: scale(1.15);
 		}
@@ -101,7 +101,7 @@
 }
 
 .hamburger-style{
-	background-color: $bgTurq;	
+	background-color: map-get($map:$paleta,$key:'tres');
 	border: none;
 	text-align: left;
 }
