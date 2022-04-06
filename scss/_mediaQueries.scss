@@ -1,10 +1,26 @@
 /* ----- media queries ----- */
+@media (min-width: 450px){
+	.contenedor{
+		grid-template-columns: 1fr;
+		grid-template-rows: auto;
+	}
+
+	// main - envio-pago-seguridad-contacto //
+	#main{
+		.main__img{
+			width: 100vw;
+			height: auto;
+		}
+	}
+}
+
+
 @media (min-width: 768px){
 	.contenedor{
 		grid-template-columns: 1fr;
 		grid-template-rows: auto;
 	}
-// header encabezado //
+	// header encabezado //
 	#header{
 		.encabezado{
 			display: flex;
@@ -13,7 +29,7 @@
 		}
 	}
 
-// nav //
+	// nav //
 	#nav{
 		vertical-align: baseline;
 		width: 100vw;
@@ -28,8 +44,12 @@
 		}
 	}
 
-// main - envio-pago-seguridad-contacto //
+	// main - envio-pago-seguridad-contacto //
 	#main{
+		.main__img{
+			width: 100vw;
+			height: auto;
+		}
 		.main__pago-envio{
 			width: 100vw;
 			height: auto;
@@ -44,7 +64,7 @@
 	}
 
 
-// HTML: categorias / contacto /sale / crear cuenta //
+	// HTML: categorias / contacto /sale / crear cuenta //
 	.cat-style{
 		justify-content: space-around;
 		padding: 2rem 1rem;
@@ -54,17 +74,14 @@
 		line-height: 2.5rem;
 	}
 	.main-contacto{
-		display: flex;
-		flex-direction: row;
-		justify-content: space-around;
-		align-items: center;
+		@include flex (row, space-around, center);		
 	}
 	.img--size{
 		width: 40rem; 
 		height: 40rem;
 	}
 
-// categorías //
+	// categorías //
 	.section__img--size1{
 		width: 37rem;
 		height: 50rem;
@@ -77,7 +94,19 @@
 		width: 50rem;
 	}
 
-// pie de página //
+	.btn{
+		margin-right: 2rem;
+		margin-bottom: 1rem;	
+		padding: 0rem 7.2rem;
+		line-height: 5rem;
+		text-align: center;	
+		}
+
+	.btn i{
+		padding-right: 2rem;
+	}
+
+	// pie de página //
 	#footer{
 		.footer__medios-de-pago img{
 			width: 8rem;
@@ -91,6 +120,7 @@
 		grid-template-columns: 1fr;
 		grid-template-rows: auto;
 	}
+
 	// main - envio-pago-seguridad-contacto //
 	#main{
 		.img_pagos{
@@ -98,12 +128,11 @@
 			padding-right: 2rem;
 			width: 9rem;
 		}
-	}
 
 		.img--size{
-		width: 50rem; 
-		height: 50rem;
-		}
+			width: 50rem; 
+			height: 50rem;
+			}
 
 		.cat-style{
 			justify-content: space-around;
@@ -114,4 +143,5 @@
 		.cat-style1{
 		line-height: 2.5rem;
 		}
+	}
 }

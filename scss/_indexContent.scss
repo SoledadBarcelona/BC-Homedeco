@@ -2,7 +2,7 @@
 #main{
 	.main__img{
 		width: 100vw;
-		height: auto;
+		height: 14rem;
 	}
 }
 
@@ -13,11 +13,8 @@
 		width: 100vw;
 		height: auto;
 		padding-top: 3rem;
-		padding-bottom: 3rem;	
-		display: flex;
-		flex-flow: column wrap;
-		justify-content: space-around;
-		align-items: center;
+		padding-bottom: 3rem;
+		@include flex (column, space-around, center);	
 		text-align: center;
 	}
 	.img_pagos{
@@ -40,10 +37,7 @@
 
 .section__categorias{
 	width: 100vw;
-	display: flex;
-	flex-flow: row wrap;
-	justify-content: space-around;
-	align-items: center;
+	@include flex (row wrap, space-around, center);
     list-style: none;
     text-align: center;
 }

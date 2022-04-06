@@ -73,3 +73,34 @@ a{
 .textLeft{
 	text-align: left;
 }
+
+//mixins
+@mixin flex($flex-flow,$justify,$align){
+	display: flex;
+	flex-flow: $flex-flow;
+	justify-content: $justify;
+	align-items: $align;
+}
+
+@mixin flex_($flex-flow,$justify){
+	display: flex;
+	flex-flow: $flex-flow;
+	justify-content: $justify;
+}
+
+@mixin texto($font-size, $line-height, $text-align){
+	font-size: $font-size;
+	line-height: $line-height;
+	text-align:$text-align;
+}
+
+@mixin borde($style, $width, $radius, $bgColor){
+	border-style: $style;
+	border-width: $width;
+	border-radius:$radius;
+	background-color: $bgColor;
+}
+
+
+//extends
+
