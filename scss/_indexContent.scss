@@ -9,7 +9,7 @@
 /* ----- main - envio-pago-seguridad-contacto ----- */
 #main{
 	.main__pago-envio{
-		background-color: $bgMain__pago-envio;
+		background-color: map-get($map:$paleta,$key:'cuatro');
 		width: 100vw;
 		height: auto;
 		padding-top: 3rem;

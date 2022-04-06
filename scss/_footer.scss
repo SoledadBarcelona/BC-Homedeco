@@ -1,6 +1,6 @@
 /* ----- pie de página ----- */
 #footer{
-	background-color: $bgDark;
+	background-color: map-get($map:$paleta,$key:'cinco');
 	color: $colorW;
 	.footer__contacto{
 		@include flex_ (row wrap, space-evenly);

@@ -74,6 +74,7 @@ a{
 	text-align: left;
 }
 
+
 //mixins
 @mixin flex($flex-flow,$justify,$align){
 	display: flex;
@@ -102,5 +103,28 @@ a{
 }
 
 
-//extends
+// map
+$paleta: (
+    'uno': #FFFFFF,
+    'dos': rgba(12, 171, 168, 1),
+    'tres': rgba(9, 105, 121, 1),
+    'cuatro': rgba(1, 89, 88, .5),
+    'cinco': rgba(32, 33, 36, 1),);
 
+
+//extends
+.btn{
+	margin-right: 1.5rem;	
+	padding: 0rem 2rem;
+	line-height: 5rem;
+	text-align: center;	
+}
+
+.redondeado{
+	@extend .btn;
+	width: 28rem;
+	margin-top: 2rem;
+
+	@include borde (solid, 1px, 1rem, rgba(32, 33, 36, 0.1));
+	background-color: rgba(9, 105, 121, 1);
+}
