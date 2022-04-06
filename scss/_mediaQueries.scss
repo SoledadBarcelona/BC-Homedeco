@@ -39,7 +39,7 @@
 			width: 24rem;
 		}
 		ul li{
-			padding-left: 5rem;
+			padding-left: 4rem;
 			padding-right: 2rem;	
 		}
 	}
@@ -119,6 +119,13 @@
 	.contenedor{
 		grid-template-columns: 1fr;
 		grid-template-rows: auto;
+	}
+
+	#nav{
+		ul li{
+			padding-left: 5rem;
+			padding-right: 2rem;	
+		}
 	}
 
 	// main - envio-pago-seguridad-contacto //

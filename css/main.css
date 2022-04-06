@@ -416,7 +416,7 @@ a {
     #nav img {
       width: 24rem; }
     #nav ul li {
-      padding-left: 5rem;
+      padding-left: 4rem;
       padding-right: 2rem; }
   #main .main__img {
     width: 100vw;
@@ -468,6 +468,9 @@ a {
   .contenedor {
     grid-template-columns: 1fr;
     grid-template-rows: auto; }
+  #nav ul li {
+    padding-left: 5rem;
+    padding-right: 2rem; }
   #main .img_pagos {
     padding-left: 2rem;
     padding-right: 2rem;
