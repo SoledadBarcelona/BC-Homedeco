@@ -1,0 +1,104 @@
+/* ----- contacto ----- */
+.main__titulo1{
+	text-align: center;
+	color: $colorB;
+	border-bottom: rgba(97, 97, 97, 0.2) 1px solid;
+	width: 100vw;
+	height: auto;
+	padding-left: 1rem;
+	padding-right: 1rem;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+}
+
+.main-contacto{
+	@include flex (column, space-evenly, center);
+	width: 100vw;
+	height: auto;
+	padding: 1rem auto;
+	text-align: center;
+}
+
+.product-design{
+	padding-left: 1.5rem;
+	text-align: left;
+	line-height: 1.3rem;
+}
+
+.span-design{
+	padding: 0.2rem;
+	background-color: map-get($map:$paleta,$key:'tres');
+	color: $colorW;
+	margin-right: 2rem;
+}
+
+
+/* ----- categorías ----- */
+.main__titulo{
+	text-align: center;
+	background: rgb(2,0,36);
+	background: $bgGradient;
+	color: $colorW;
+	width: 100vw;
+	height: auto;
+	margin-top: -0.5rem;
+	padding-top: 1.6rem;
+	padding-bottom: 1.6rem;
+}
+
+.span-design1{
+	padding: 0.2rem;
+	background-color: map-get($map:$paleta,$key:'tres');
+	color: $colorW;
+	margin-right: 0.8rem;
+}
+
+.section__img--size1{
+	width: 24rem;
+	height: 34rem;
+	margin: 0.4rem;
+	padding-top: 2rem;
+	padding-bottom: 1rem;
+}
+
+.img--size{
+	width: 30rem; 
+	height: 30rem;
+}
+
+
+/* ----- forms ----- */
+.diseño__form{
+	@include flex (column wrap, center, center);
+	cursor: text;
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+	margin-left: 1.5rem;
+	margin-right: 1.5rem;
+	text-transform: uppercase;
+	text-align: left;
+	line-height: 4rem;
+	color: $colorDark;
+}
+
+.label{
+	padding-top: 2rem;
+	padding-left: 1rem;
+}
+
+.style{
+	display: block;
+	width: 28rem;
+	height: 4rem;
+	padding: 1rem;
+	@include borde (solid, 1px, 1rem, transparent);
+}
+
+.style-button{
+	display: flex;
+	flex-flow: column wrap;
+}
+
+.btn i{
+	padding-right: 1.5rem;
+}
