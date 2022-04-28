@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Rubik:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Merriweather&family=Roboto+Mono:wght@200;300;400&family=Rubik:wght@300;400;500&display=swap');
 $fontMain: 'Lato', sans-serif;
 
 *{
@@ -115,7 +115,7 @@ $paleta: (
 //extends
 .btn{
 	margin-right: 1.5rem;	
-	padding: 0rem 2rem;
+	padding: 0rem 2.8rem;
 	line-height: 5rem;
 	text-align: center;	
 }
@@ -124,7 +124,20 @@ $paleta: (
 	@extend .btn;
 	width: 28rem;
 	margin-top: 2rem;
-
 	@include borde (solid, 1px, 1rem, rgba(32, 33, 36, 0.1));
 	background-color: rgba(9, 105, 121, 1);
 }
+
+
+//Background//
+$bgGradient: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,105,121,1) 35%, rgba(0,212,255,1) 100%);
+
+// Color //
+$colorW: #FFFFFF;
+$colorS: #C0C0C0;
+$colorG: #515B5B;
+$colorTurq: rgba(9, 105, 121, 1);
+$colorTurq-soft: rgba(9, 105, 121, .3);
+$colorB: rgba(2, 0, 36, .8);
+$colorDark: rgba(32, 33, 36, 1);
+$colorDark-soft: rgba(32, 33, 36, 0.1);
