@@ -2,7 +2,6 @@
 #main{
 	.main__img{
 		width: 100vw;
-		height: 14rem;
 	}
 }
 
@@ -12,8 +11,8 @@
 		background-color: map-get($map:$paleta,$key:'cuatro');
 		width: 100vw;
 		height: auto;
-		padding-top: 3rem;
-		padding-bottom: 3rem;
+		padding-top: 2rem;
+		padding-bottom: 2rem;
 		@include flex (column, space-around, center);	
 		text-align: center;
 	}
